@@ -1,4 +1,3 @@
 {
-  "port": 80,
-  "loadenv": false
+  "port": 80
 }
