@@ -1,11 +1,12 @@
 var express = require('express');
 var _ = require('underscore');
-var env = require('node-env-file');
+
 var app = express();
 var config = require('./lib/config');
 
 if (config.loadenv) {
 	//Load any undefined ENV variables from a specified file.
+	var env = require('node-env-file');
 	env(__dirname + '/.env');
 }
 
