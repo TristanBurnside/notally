@@ -16,7 +16,8 @@
     "jasmine-node": "~1.0.26",
     "underscore": "~1.5.2",
     "neo4j" : "",
-    "streamline" : ""
+    "streamline" : "",
+    "node-env-file": ""
   },
   "subdomain": "neo4j-test",
   "engines": {
