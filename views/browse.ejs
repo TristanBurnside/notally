@@ -1,0 +1,11 @@
+<% include header %>
+<div id=browseDiv>
+	<p> <a href='./?keyword=<%= keywords[0].data.keyword %>'> <%= keywords[0].data.keyword %> </a></p> <br />
+	<p> <a href='./?keyword=<%= keywords[1].data.keyword %>'> <%= keywords[1].data.keyword %> </a>
+
+	<span id=note><%= note.data.note %></span>
+
+	<a href='./?keyword=<%= keywords[2].data.keyword %>'> <%= keywords[2].data.keyword %> </a></p> <br />
+	<p> <a href='./?keyword=<%= keywords[3].data.keyword %>'> <%= keywords[3].data.keyword %> </a></p> <br />
+</div>
+<% include footer %>

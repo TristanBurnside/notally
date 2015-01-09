@@ -1,0 +1,25 @@
+{
+  "name": "neo4j-test",
+  "version": "0.0.1",
+  "description": "A test app of notes in a neo4j database",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git:git.git"
+  },
+  "dependencies": {
+    "express": "~3.0.1",
+    "ejs": "~0.8.3",
+    "jasmine-node": "~1.0.26",
+    "underscore": "~1.5.2",
+    "neo4j" : "",
+    "streamline" : ""
+  },
+  "subdomain": "neo4j-test",
+  "engines": {
+    "node": ">=0.8.x"
+  }
+}
