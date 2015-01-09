@@ -1,15 +1,14 @@
 var express = require('express');
 var _ = require('underscore');
-
+var env = require('node-env-file');
 var app = express();
 var config = require('./lib/config');
 
-console.log("Config.loadenv: " + config.loadEnv);
-
-if (config.loadenv) {
-	//Load any undefined ENV variables from a specified file.
-	var env = require('node-env-file');
-	env(__dirname + '/.env');
+if ( process.env.NODE_ENV !== 'production' ) {
+	    console.log('NOT running production');
+	    env(__dirname + '/.env');
+} else {
+	    console.log('Running PRODUCTION');
 }
 
 var notes = require('./lib/notes');
